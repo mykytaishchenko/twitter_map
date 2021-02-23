@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d12d921b8ad3417898238b0264d6d25a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d12d921b8ad3417898238b0264d6d25a" ></div>
+        
+</body>
+<script>    
+    
+            var map_d12d921b8ad3417898238b0264d6d25a = L.map(
+                "map_d12d921b8ad3417898238b0264d6d25a",
+                {
+                    center: [0, 0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 1,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbe4a6554d9844a1a605affffdc8f1fb = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d12d921b8ad3417898238b0264d6d25a);
+        
+    
+            var feature_group_a383be89e6544edb94a35eb036b957ec = L.featureGroup(
+                {}
+            ).addTo(map_d12d921b8ad3417898238b0264d6d25a);
+        
+    
+            var marker_ab96ecc7acc3451b91c070ff1a5c5f24 = L.marker(
+                [42.6410472, -70.6165149],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_d0391a98f67542c28e0c923209eda1a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ab96ecc7acc3451b91c070ff1a5c5f24.setIcon(icon_d0391a98f67542c28e0c923209eda1a4);
+        
+    
+        var popup_5bcd5b4cfc634d2d896c51d1cd8d1114 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1dbd93c5200145ccaf8e8b039db06f07 = $(`<div id="html_1dbd93c5200145ccaf8e8b039db06f07" style="width: 100.0%; height: 100.0%;">Dogecoin Developers</div>`)[0];
+            popup_5bcd5b4cfc634d2d896c51d1cd8d1114.setContent(html_1dbd93c5200145ccaf8e8b039db06f07);
+        
+
+        marker_ab96ecc7acc3451b91c070ff1a5c5f24.bindPopup(popup_5bcd5b4cfc634d2d896c51d1cd8d1114)
+        ;
+
+        
+    
+    
+            var marker_c3b53a38547848fba9f8b54ac4ca8410 = L.marker(
+                [58.5959044, 23.21964608602439],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_ca3fb8dfbe3b49058a281768d95591a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3b53a38547848fba9f8b54ac4ca8410.setIcon(icon_ca3fb8dfbe3b49058a281768d95591a7);
+        
+    
+        var popup_b60f310cbd434c7dbcff97a6743be00e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15393725a0f243a4ac9d5b1b06d6bf88 = $(`<div id="html_15393725a0f243a4ac9d5b1b06d6bf88" style="width: 100.0%; height: 100.0%;">Dogecoin</div>`)[0];
+            popup_b60f310cbd434c7dbcff97a6743be00e.setContent(html_15393725a0f243a4ac9d5b1b06d6bf88);
+        
+
+        marker_c3b53a38547848fba9f8b54ac4ca8410.bindPopup(popup_b60f310cbd434c7dbcff97a6743be00e)
+        ;
+
+        
+    
+    
+            var marker_9531e0086b724f6aa1e111444a81261d = L.marker(
+                [37.426540700000004, -122.17029258409187],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_90cd98256fb94f0f925cb0a09feb9933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9531e0086b724f6aa1e111444a81261d.setIcon(icon_90cd98256fb94f0f925cb0a09feb9933);
+        
+    
+        var popup_34f745075c624bd2be60d1996bb508b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4a92fafebcd14bd488d0ac5b257bef47 = $(`<div id="html_4a92fafebcd14bd488d0ac5b257bef47" style="width: 100.0%; height: 100.0%;">Andrej Karpathy</div>`)[0];
+            popup_34f745075c624bd2be60d1996bb508b0.setContent(html_4a92fafebcd14bd488d0ac5b257bef47);
+        
+
+        marker_9531e0086b724f6aa1e111444a81261d.bindPopup(popup_34f745075c624bd2be60d1996bb508b0)
+        ;
+
+        
+    
+    
+            var marker_5f0d441a6e9744f7a76caacf3571eee3 = L.marker(
+                [29.5517223, -95.0985272],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_6e3f3ebda05b4d93912c45f9aaedd3e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f0d441a6e9744f7a76caacf3571eee3.setIcon(icon_6e3f3ebda05b4d93912c45f9aaedd3e1);
+        
+    
+        var popup_3bac63d22efa48a3951c3fceb1afbe6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b60747422714e0bb369d1cfe7b431d1 = $(`<div id="html_6b60747422714e0bb369d1cfe7b431d1" style="width: 100.0%; height: 100.0%;">NOGUCHI, Soichi 野口　聡－（のぐち　そういち）</div>`)[0];
+            popup_3bac63d22efa48a3951c3fceb1afbe6e.setContent(html_6b60747422714e0bb369d1cfe7b431d1);
+        
+
+        marker_5f0d441a6e9744f7a76caacf3571eee3.bindPopup(popup_3bac63d22efa48a3951c3fceb1afbe6e)
+        ;
+
+        
+    
+    
+            var marker_5a413e5ef16d46a481996caa2e9d28af = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_7e6839db321b4c3bbc07559d415b61f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5a413e5ef16d46a481996caa2e9d28af.setIcon(icon_7e6839db321b4c3bbc07559d415b61f8);
+        
+    
+        var popup_02e297fbb69c4773b6bc6f07058dbcc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5efeb89bb51405894d3e8aeed3c2b1e = $(`<div id="html_b5efeb89bb51405894d3e8aeed3c2b1e" style="width: 100.0%; height: 100.0%;">Popular Mechanics</div>`)[0];
+            popup_02e297fbb69c4773b6bc6f07058dbcc6.setContent(html_b5efeb89bb51405894d3e8aeed3c2b1e);
+        
+
+        marker_5a413e5ef16d46a481996caa2e9d28af.bindPopup(popup_02e297fbb69c4773b6bc6f07058dbcc6)
+        ;
+
+        
+    
+    
+            var marker_a1dc2214d2714c7e82e7ced1cb7a8355 = L.marker(
+                [-6.1753942, 106.827183],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_2d269e8a177d4404b994dc79635378e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1dc2214d2714c7e82e7ced1cb7a8355.setIcon(icon_2d269e8a177d4404b994dc79635378e5);
+        
+    
+        var popup_816c25636b42415285a5364667c56a73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1cf14115e2bd47728c0c54dd3996f982 = $(`<div id="html_1cf14115e2bd47728c0c54dd3996f982" style="width: 100.0%; height: 100.0%;">Nigel Lockyer</div>`)[0];
+            popup_816c25636b42415285a5364667c56a73.setContent(html_1cf14115e2bd47728c0c54dd3996f982);
+        
+
+        marker_a1dc2214d2714c7e82e7ced1cb7a8355.bindPopup(popup_816c25636b42415285a5364667c56a73)
+        ;
+
+        
+    
+    
+            var marker_da0c3687a66a471e8029abaf273fbc1b = L.marker(
+                [58.5959044, 23.21964608602439],
+                {}
+            ).addTo(feature_group_a383be89e6544edb94a35eb036b957ec);
+        
+    
+            var icon_a0c8c8dbbc724bf5b9c2d10806bcc125 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da0c3687a66a471e8029abaf273fbc1b.setIcon(icon_a0c8c8dbbc724bf5b9c2d10806bcc125);
+        
+    
+        var popup_2b95711a2e714197bc89534019c40f6d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4bdf8c0695004bb592a27b0abd32656c = $(`<div id="html_4bdf8c0695004bb592a27b0abd32656c" style="width: 100.0%; height: 100.0%;">じゃがりきん</div>`)[0];
+            popup_2b95711a2e714197bc89534019c40f6d.setContent(html_4bdf8c0695004bb592a27b0abd32656c);
+        
+
+        marker_da0c3687a66a471e8029abaf273fbc1b.bindPopup(popup_2b95711a2e714197bc89534019c40f6d)
+        ;
+
+        
+    
+</script>
