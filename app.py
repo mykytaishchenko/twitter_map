@@ -1,5 +1,9 @@
-"""Docs"""
-from flask import Flask, render_template, request, redirect, url_for, flash
+"""The module, receiving the username of a Twitter user,
+generates a map that shows the followers of a given user.
+"""
+
+
+from flask import Flask, render_template, request, redirect, url_for
 import folium
 from geopy.geocoders import Nominatim
 import json
@@ -14,6 +18,10 @@ app = Flask(__name__)
 
 
 def user_request():
+    """The function makes a request to the twitter
+    API and returns the json file with information about
+    user followers.
+    """
     if test:
         file = json.load(open('static/friends_list_AdamMGrant.json', 'r', encoding='utf-8'))
         users = [(user_block['name'], user_block['location']) for user_block in file['users']
@@ -44,6 +52,8 @@ def user_request():
 
 
 def find_location(users):
+    """The function looks for the coordinates of followers.
+    """
     users_locations = []
     geo_loc = Nominatim(user_agent="map_generator_with_twitter")
     for user in users:
@@ -56,6 +66,8 @@ def find_location(users):
 
 
 def map_generate():
+    """The function generates a map, marking followers.
+    """
     earth_map = folium.Map(zoom_start=30)
     users = find_location(user_request())
 
@@ -69,11 +81,13 @@ def map_generate():
 
 @app.route('/', methods=['POST', 'GET'])
 def get_parameters():
+    """The function renders the main page,
+    and accepts the username and key.
+    """
     global nickname, token
     if request.method == 'POST':
         nickname = request.form.get('nickname')
         token = request.form.get('key-1')
-        # flash('Wait.')
         return redirect(url_for('show_map'))
 
     return render_template('home.html')
@@ -81,6 +95,9 @@ def get_parameters():
 
 @app.route('/map')
 def show_map():
+    """The function starts the generation
+    of the map and renders it.
+    """
     map_generate()
     return render_template('map.html')
 
